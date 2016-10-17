@@ -6,6 +6,10 @@
   "scripts": {
     "test": ""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eadmundo/nunjucks-scaffolder.git"
+  },
   "author": "Edward Stone <edwardjstone@yahoo.com> (https://github.com/eadmundo)",
   "license": "MIT",
   "dependencies": {
