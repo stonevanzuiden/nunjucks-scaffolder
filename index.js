@@ -43,7 +43,11 @@ var source = program.args[0];
 var dest = program.args[1];
 var contextFile = program.contextFile;
 
-var context = {};
+var context = {
+  foo: 'bar',
+  bar: 'foo',
+  empty: 'huh'
+};
 
 var errorMsg = [];
 
@@ -67,6 +71,9 @@ if (contextFile !== undefined) {
 }
 
 ncp(source, dest, {
+  rename: function(target) {
+    return nunjucks.renderString(target, context);
+  },
   transform: function(read, write) {
     var readPath = read.path;
     var writePath = write.path;

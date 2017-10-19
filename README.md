@@ -18,7 +18,7 @@ Simple code scaffolding using nunjucks templates.
 
 `nunjucks-scaffolder` recursively copies files & directories from a source
 directory to a destination directory, using [ncp](https://github.com/AvianFlu/ncp)
-under the hood. Each file is rendered as a [nunjucks template](https://mozilla.github.io/nunjucks/templating.html) with the contents of the context file passed as context
+under the hood. Each file, filename and directory name is parsed as a [nunjucks template](https://mozilla.github.io/nunjucks/templating.html) with the contents of the context file passed as context
 to each template. The context file is parsed as [jsonnet](http://jsonnet.org).
 
 If the destination directory doesn't exist, the scaffolder will create it (but only

@@ -16,7 +16,7 @@
     "commander": "^2.9.0",
     "errno": "^0.1.4",
     "jsonnet": "^0.5.0-beta",
-    "ncp": "^2.0.0",
+    "ncp": "git+https://github.com/stonevanzuiden/ncp.git#57bfa7ed872c6a2a71bb43dfa879647d9b499548",
     "nunjucks": "^2.5.2",
     "stream-to-string": "^1.1.0",
     "string-to-stream": "^1.1.0"
